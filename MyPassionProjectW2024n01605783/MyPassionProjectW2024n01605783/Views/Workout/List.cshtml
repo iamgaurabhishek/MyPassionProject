@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MyPassionProjectW2024n01605783.Models.WorkoutDto>
+
+@{
+    ViewBag.Title = "List";
+}
+<a href="/Workout/new">Add Workout</a>
+<h2>List</h2>
+@foreach (var Workout in Model)
+{
+    <h2><a href="/Workout/Details/@Workout.WorkoutId">@Workout.WorkoutName</a></h2>
+    <div>Workout Status: @Workout.WorkoutStatus</div>
+    <div>Workout Description: @Workout.WorkoutDescription</div>
+}

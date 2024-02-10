@@ -1,0 +1,14 @@
+﻿﻿@model MyPassionProjectW2024n01605783.Models.WorkoutDto
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a style="color:#ab2020;" href="/Workout/DeleteConfirm/@Model.WorkoutId">Delete</a>
+
+<a href="/Workout/List">Go back to list</a>
+<h2>@Model.WorkoutName</h2>
+<div>Workout Description : @Model.WorkoutDescription</div>
+<div>Workout Status: @Model.WorkoutStatus</div>
+<a href="">Delete </a>

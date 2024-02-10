@@ -1,0 +1,14 @@
+﻿﻿@model MyPassionProjectW2024n01605783.Models.UserDto
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a style="color:#ab2020;" href="/User/DeleteConfirm/@Model.UserId">Delete</a>
+
+<a href="/User/List">Go back to list</a>
+<h2>@Model.UserName</h2>
+<div>User Description : @Model.UserDescription</div>
+<div>User Age: @Model.UserAge</div>
+<a href="">Delete </a>
