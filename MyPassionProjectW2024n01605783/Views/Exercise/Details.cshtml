@@ -1,0 +1,25 @@
+﻿﻿@model MyPassionProjectW2024n01605783.Models.ExerciseDto
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a style="color:#ab2020;" href="/Exercise/DeleteConfirm/@Model.ExerciseId" class="btn btn-danger">Delete</a>
+
+<a href="/Exercise/Edit/@Model.ExerciseId" class="btn btn-info">Update</a>
+
+<a href="/Exercise/List" class="btn btn-success">Go back to list</a>
+<h2>@Model.ExerciseName</h2>
+<div class="mb-3">
+    <div>Exercise Description : @Model.ExerciseDescription</div>
+</div>
+<div class="mb-3">
+    <div>Workout ID: @Model.WorkoutId</div>
+</div>
+<div class="mb-3">
+    <div>Workout Day: @Model.WorkoutDay</div>
+</div>
+<div class="mb-3">
+    <div>Workout Name: @Model.WorkoutName</div>
+</div>
